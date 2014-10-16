@@ -18,27 +18,79 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
+  React Fullstack Yeoman Generator
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  Yeoman Generator for React.js lets you quickly set up a fullstack project with an express server, useful options for database, front end framework, build-tool and testing integration.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  
+  ### Client ###
+
+  * Scripts: JavaScript, JSX, (CoffeeScript)
+  * Markup: HTML, (Jade)
+  * Stylesheets: CSS, (Stylus), (Sass), (Less)
+  
+  ### Server ###
+
+  * Database: None, MongoDB
+  * Authentication boilerplate: Yes, No
+  * PasswordHashing: BCrypt, Crypto
+  * oAuth integrations: Facebook Twitter Google
+  * Socket.io integration: Yes, No
+
+  ##Generators##
+  * react-fullstack (aka react-fullstack:app)
+  Server Side
+  * react-fullstack:endpoint
+  Client Side
+  * react-fullstack:route
+  * react-fullstack:controller
+  * react-fullstack:view
+  * react-fullstack:model
 
 ## Problem ##
   > Describe the problem your product solves.
+  There is no fullstack react Generator. Existing react generators offer few featurs / options. React is gaining popularity and this issue needs to be addressed.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
+  Elegantly drafts scaffolds for faster implementation of React applications. Drastically reduces the learning curve and time spent writing boilerplate code. Integrates perfectly with Backbone and Angular and has a complete backend using Express and Mongo.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+  "I don't even know React but I could make a fullstack app using this. Move over Facebook!" - Teresa
+  "I have ten million users rendered concurrently on my app. Angular couldn't handle it, but it was no problem for React Fullstack" - Richard
+  "React can render every single note in the musical spectrum" - Marc
+  "I just built this for the Github Stars" - James
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
+  ## Usage
+
+Install `generator-react-fullstack`:
+```
+npm install -g generator-react-fullstack
+```
+
+Make a new directory, and `cd` into it:
+```
+mkdir my-new-project && cd $_
+```
+
+Run `yo react-fullstack`, optionally passing an app name:
+```
+yo react-fullstack [app-name]
+```
+
+Run `grunt` for building, `grunt serve` for preview, and `grunt serve:dist` for a preview of the built app.
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "I owe my entire company to this scaffold" - Tony Phillips
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+  Use React in your next web app, and use react-fullstack to save time.
