@@ -6,7 +6,7 @@ var AppStore = require('../stores/AppStore');
 var AppActions = require('../actions/AppActions');
 
 function getAppState(){
-  return AppStore.getData()
+  return AppStore.getData();
 };
 
 var NAV = React.createClass({

@@ -15,7 +15,10 @@ var ITEM = React.createClass({
 
   render: function(){
     return (
-      <li key={this.props.key} className="list-group-item">{this.props.item.item}<a className="close" onClick={this.handleClick} href="#">x</a></li> 
+      <li key={this.props.key} className="list-group-item">
+        {this.props.item.item}
+        <a className="close" onClick={this.handleClick} href="#">x</a>
+      </li> 
     )
   }
 })

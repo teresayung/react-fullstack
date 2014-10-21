@@ -5,7 +5,7 @@ var React = require('react');
 
 var AppStore = require('../stores/AppStore');
 var AppActions = require('../actions/AppActions');
-var ITEM = require('./Item.jsx')
+var ITEM = require('./Item.jsx');
 
 var TODO = React.createClass({
  
@@ -25,28 +25,25 @@ var TODO = React.createClass({
   },
 
   render: function(){
-    // console.log(this.props.allTodos);
     var items = this.props.allTodos.map(function(item, i) {
       return <ITEM item={item} key={i}/>
     });
     return (
       <div>
-      <div className="container">
-      <div><h1>Welcome To The React-Flux-Fullstack Slush Generator</h1></div>
-        <div className="input-group">
-          <input type="text" className="form-control" onKeyPress={this.handleInput} placeholder="New item..." ref="todo"/>
+        <div className="container">
+          <div><h1>Welcome To The React-Flux-Fullstack Slush Generator</h1></div>
+          <div className="input-group">
+            <input type="text" className="form-control" onKeyPress={this.handleInput} placeholder="New item..." ref="todo"/>
             <span className="input-group-btn">
               <button className="btn btn-primary" type="button" onClick={this.handleClick}>Add</button>
-          </span>
-        </div>
-
-        <div><h3>Features:</h3></div>
-        <ul className="list-group">
-          {items} 
-        </ul>
-        
-      </div> 
-      <div className="footer">
+            </span>
+            </div>
+          <div><h3>Features:</h3></div>
+          <ul className="list-group">
+            {items} 
+          </ul>
+        </div> 
+        <div className="footer">
           <div className="container">
             <p className="text-muted"> Fork us on Github! </p>
           </div>

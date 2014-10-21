@@ -8,7 +8,7 @@ var BANNER = React.createClass({
       <div className="container-fluid banner">
         <img src="./image/slush-react.png"/>
       </div>
-    );
+    )
   }
 })
 
