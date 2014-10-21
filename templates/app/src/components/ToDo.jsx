@@ -24,8 +24,9 @@ var TODO = React.createClass({
       return <ITEM item={item} key={i}/>
     });
     return (
+      <div>
       <div className="container">
-      <div><h1>Features:</h1></div>
+      <div><h1>Welcome to The React-Flux-Fullstack Generator</h1></div>
         <div className="input-group">
           <input type="text" className="form-control" placeholder="New item..." ref="todo"/>
             <span className="input-group-btn">
@@ -33,11 +34,18 @@ var TODO = React.createClass({
           </span>
         </div>
 
-
+        <div><h3>Features:</h3></div>
         <ul className="list-group">
           {items} 
         </ul>
-      </div>      
+        
+      </div> 
+      <div className="footer">
+          <div className="container">
+            <p className="text-muted"> Fork us on Github! </p>
+          </div>
+        </div>
+      </div>     
     );
   }
 })
