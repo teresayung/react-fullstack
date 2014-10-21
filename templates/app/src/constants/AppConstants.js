@@ -3,5 +3,6 @@
 var keyMirror = require('react/lib/keyMirror');
 
 module.exports = keyMirror({
-  EXAMPLE_CONSTANT: null
+  ADD: null,
+  REMOVE: null
 });

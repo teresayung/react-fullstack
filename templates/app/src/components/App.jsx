@@ -40,7 +40,6 @@ var APP = React.createClass({
         <NAV/>
         <BANNER/>
         <TODO allTodos={this.state.todos}/>
-        <button onClick={this.handleClick}>{this.state.message}</button>
       </div>
       );
   }

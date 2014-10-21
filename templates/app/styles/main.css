@@ -1,0 +1,22 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.list-group {
+  margin-top: 25px;
+}
+
+.banner {
+  text-align: center;
+  background-color: #D184B7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.login {
+  margin-right: 25px;
+}
+
+.input-group {
+  margin-top: 50px;
+}

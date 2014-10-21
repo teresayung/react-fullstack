@@ -3,17 +3,16 @@ var AppDispatcher = require('../dispatchers/AppDispatcher');
 var AppConstants = require('../constants/AppConstants');
 
 var AppActions = {
-  exampleAction: function(text){
+  addItemAction: function(text) {
     AppDispatcher.handleViewAction({
-      actionType: AppConstants.EXAMPLE_CONSTANT,
-      text: text + ' to Actions'
+      actionType: AppConstants.ADD,
+      text: text
     });
   },
-  addItemAction: function(text) {
-    // console.log(text);
+  removeItemAction: function(id) {
     AppDispatcher.handleViewAction({
-      actionType: AppConstants.EXAMPLE_CONSTANT,
-      text: text
+      actionType: AppConstants.REMOVE,
+      id: id
     });
   }
 };

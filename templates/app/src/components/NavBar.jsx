@@ -33,16 +33,12 @@ var NAV = React.createClass({
   render: function(){
     return (
         <nav className="navbar navbar-default" role="navigation">
-          <div className="container-fluid">
-            <div className="navbar-header">
-              <a className="navbar-brand" href="#">React-Flux-Fullstack</a>
-              <ul className="nav navbar-nav navbar-right">
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </div>
-          </div>
-      </nav>
+          <a className="navbar-brand" href="#">React-Flux-Fullstack</a>
+          <ul className="nav navbar-nav navbar-right">
+            <li><a href="#">Sign up</a></li>
+            <li className="login"><a href="#">Login</a></li>
+          </ul>
+        </nav>
     );
   }
 })
