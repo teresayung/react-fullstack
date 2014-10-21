@@ -8,6 +8,13 @@ var AppActions = {
       actionType: AppConstants.EXAMPLE_CONSTANT,
       text: text + ' to Actions'
     });
+  },
+  addItemAction: function(text) {
+    // console.log(text);
+    AppDispatcher.handleViewAction({
+      actionType: AppConstants.EXAMPLE_CONSTANT,
+      text: text
+    });
   }
 };
 

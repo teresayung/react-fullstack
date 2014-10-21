@@ -7,6 +7,7 @@ var AppActions = require('../actions/AppActions');
 
 var NAV = require('./NavBar.jsx');
 var BANNER = require('./Banner.jsx');
+var TODO = require('./ToDo.jsx')
 
 function getAppState(){
   return AppStore.getData()
@@ -38,6 +39,7 @@ var APP = React.createClass({
       <div>
         <NAV/>
         <BANNER/>
+        <TODO allTodos={this.state.todos}/>
         <button onClick={this.handleClick}>{this.state.message}</button>
       </div>
       );
