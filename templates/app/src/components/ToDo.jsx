@@ -7,8 +7,9 @@ var AppStore = require('../stores/AppStore');
 var AppActions = require('../actions/AppActions');
 var ITEM = require('./Item.jsx');
 
+
 var TODO = React.createClass({
- 
+
   handleClick: function() {
 
     var task = this.refs.todo.getDOMNode().value.trim();
