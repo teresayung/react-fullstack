@@ -41,7 +41,7 @@ var APP = React.createClass({
         <BANNER/>
         <TODO allTodos={this.state.todos}/>
       </div>
-      );
+      )
   }
 })
 
