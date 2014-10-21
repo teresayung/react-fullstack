@@ -18,6 +18,12 @@ var TODO = React.createClass({
     this.refs.todo.getDOMNode().value = '';
   },
 
+  handleInput: function(e) {
+    if (e.nativeEvent.charCode === 13) {
+      this.handleClick();
+    }
+  },
+
   render: function(){
     // console.log(this.props.allTodos);
     var items = this.props.allTodos.map(function(item, i) {
@@ -26,9 +32,9 @@ var TODO = React.createClass({
     return (
       <div>
       <div className="container">
-      <div><h1>Welcome to The React-Flux-Fullstack Generator</h1></div>
+      <div><h1>Welcome To The React-Flux-Fullstack Slush Generator</h1></div>
         <div className="input-group">
-          <input type="text" className="form-control" placeholder="New item..." ref="todo"/>
+          <input type="text" className="form-control" onKeyPress={this.handleInput} placeholder="New item..." ref="todo"/>
             <span className="input-group-btn">
               <button className="btn btn-primary" type="button" onClick={this.handleClick}>Add</button>
           </span>

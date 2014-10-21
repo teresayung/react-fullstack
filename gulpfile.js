@@ -24,6 +24,7 @@ gulp.task('browserify', function() {
 
 gulp.task('connect', function(){
   connect.server({
+    root: 'templates/app',
     livereload: true,
     port: 8080
   });
