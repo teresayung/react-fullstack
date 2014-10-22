@@ -14,14 +14,13 @@ var NotFoundRoute = Router.NotFoundRoute;
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 
-// module.exports = React.renderComponent(<APP />, document.body);
 
 var routes = (
   <Routes location="history">
     <Route name="home" path="/" handler={HOME}/>
     <Route name="login" handler={LOGIN}/>
     <Route name="signup" handler={SIGNUP}/>
-    <DefaultRoute handler={APP}/>
+    <DefaultRoute handler={HOME}/>
   </Routes>
 );
 
