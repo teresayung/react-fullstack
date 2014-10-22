@@ -9,7 +9,8 @@ var AppActions = require('../actions/AppActions');
 
 var ITEM = React.createClass({
 
-  handleClick: function() {
+  handleClick: function(e) {
+    e.preventDefault();
     AppActions.removeItemAction(this.props.item.id);
   },
 
