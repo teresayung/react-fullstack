@@ -18,7 +18,8 @@
   "homepage": "https://github.com/KiaFathi/reactFluxTemplate",
   "dependencies": {
     "flux": "^2.0.1",
-    "react": "^0.11.2"
+    "react": "^0.11.2",
+    "react-router": "^0.9.4"
   },
   "devDependencies": {
     "browserify": "^5.12.0",
