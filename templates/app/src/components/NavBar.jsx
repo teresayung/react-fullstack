@@ -5,6 +5,9 @@ var React = require('react');
 var AppStore = require('../stores/AppStore');
 var AppActions = require('../actions/AppActions');
 
+var Router = require('react-router');
+var Link = Router.Link;
+
 function getAppState(){
   return AppStore.getData();
 };
@@ -14,10 +17,10 @@ var NAV = React.createClass({
   render: function(){
     return (
         <nav className="navbar navbar-default" role="navigation">
-          <a className="navbar-brand" href="#">React-Flux-Fullstack</a>
+          <Link to="home">React-Flux-Fullstack</Link>
           <ul className="nav navbar-nav navbar-right">
-            <li><a href="#">Sign up</a></li>
-            <li className="login"><a href="#">Login</a></li>
+            <li><Link to="signup">Signup</Link></li>
+            <li><Link to="login">Login</Link></li>
           </ul>
         </nav>
     );

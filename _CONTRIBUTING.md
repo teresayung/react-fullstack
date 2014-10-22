@@ -122,15 +122,16 @@ you get here again and nothing is broken and all the tests pass.
 
 ### Make a pull request
 
-Make a clear pull request from your fork and branch to the upstream master
+Make a clear pull request from your fork and branch to the **canary**
 branch, detailing exactly what changes you made and what feature this
 should add. The clearer your pull request is the faster you can get
 your changes incorporated into this repo.
 
 At least one other person MUST give your changes a code review, and once
-they are satisfied they will merge your changes into upstream. Alternatively,
-they may have some requested changes. You should make more commits to your
-branch to fix these, then follow this process again from rebasing onwards.
+they are satisfied they will merge your changes into the upstream master 
+branch. Alternatively, they may have some requested changes. You should make 
+more commits to your branch to fix these, then follow this process again from
+rebasing onwards.
 
 Once you get back here, make a comment requesting further review and
 someone will look at your code again. If they like it, it will get merged,
@@ -159,12 +160,13 @@ This is just to help you organize your process
  - [ ] Do all of my changes directly relate to this change?
 - [ ] Did I rebase the upstream master branch after I finished all my
   work?
-- [ ] Did I write a clear pull request message detailing what changes I made?
-- [ ] Did I get a code review?
- - [ ] Did I make any requested changes from that code review?
+- [ ] Did I make a pull request to the canary branch?
+  - [ ] Did I write a clear pull request message detailing what changes I made?
+  - [ ] Did I get a code review?
+  - [ ] Did I make any requested changes from that code review?
 
 If you follow all of these guidelines and make good changes, you should have
-no problem getting your changes merged in.
+no problem getting your changes merged in. 
 
 
 <!-- Links -->

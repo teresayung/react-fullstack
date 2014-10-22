@@ -34,3 +34,12 @@
 .container .text-muted {
   margin: 20px 0;
 }
+
+.control-label {
+  margin-left: 20px;
+}
+
+.control-button {
+  margin-left: 20px;
+}
+

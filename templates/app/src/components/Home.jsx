@@ -37,7 +37,9 @@ var APP = React.createClass({
   render: function(){
     return (
       <div>
-        <this.props.activeRouteHandler/>
+        <NAV/>
+        <BANNER/>
+        <TODO allTodos={this.state.todos}/>
       </div>
       )
   }
