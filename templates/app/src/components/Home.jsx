@@ -1,3 +1,6 @@
+/** @jsx React.DOM */
+
+
 'use strict';
 
 var React = require('react');
@@ -7,10 +10,10 @@ var AppActions = require('../actions/AppActions');
 
 var NAV = require('./NavBar.jsx');
 var BANNER = require('./Banner.jsx');
-var TODO = require('./ToDo.jsx')
+var TODO = require('./ToDo.jsx');
 
 function getAppState(){
-  return AppStore.getData()
+  return AppStore.getData();
 };
 
 var APP = React.createClass({
@@ -37,8 +40,6 @@ var APP = React.createClass({
   render: function(){
     return (
       <div>
-        <NAV/>
-        <BANNER/>
         <TODO allTodos={this.state.todos}/>
       </div>
       )

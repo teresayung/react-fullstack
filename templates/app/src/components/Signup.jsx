@@ -1,3 +1,6 @@
+/** @jsx React.DOM */
+
+
 'use strict';
 
 var React = require('react');
@@ -22,8 +25,6 @@ var SIGNUP  = React.createClass({
   render: function(){
     return (
       <div>
-        <NAV/>
-        <BANNER/>
         <div className="container">
         <h1>Signup</h1>
         <form className="form-horizontal" role="form">
